@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    user-select: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.top-announce {
+    display: none;
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(1, 0, 0, 0.6) 0%, #ff0000 100%, #ffb3b3 85%, #ffe6e6 0%);
+}
+
+.top-announce span {
+    color: white;
+}
+
+.top-announce p {
+    margin-top: 8px;
+    font-size: 22px;
+}
+
+.side-announce {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right:0;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    text-align: left    ;
+    background: linear-gradient(45deg, rgba(1, 0, 0, 0.6) 0%, #ff0000 100%, #ffb3b3 85%, #ffe6e6 0%);
+}
+
+.side-announce span {
+    color: white;
+}
+
+.side-announce p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.center-announce {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(1, 0, 0, 0.6) 0%, #ff0000 100%, #ffb3b3 85%, #ffe6e6 0%);
+}
+
+.center-announce span {
+    color: black;
+}
+
+.center-announce p {
+    margin-top: 8px;
+    font-size: 35px;
+}
+
+.floating-text {
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: auto;
+    height: auto;
+    font-size: 22px;
+    padding: 20px;
+    max-width: auto;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(43, 102, 74, 0.6) 0%, #232f3a88 100%, #000000 85%, #13302294 0%);
+}
+
+.floating-text span {
+    color: #ffffff;
+}
+
+.floating-text p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+.circle {
+    margin:0 auto;
+    display:inline-block;
+    border-radius: 100%;
+    padding: 10px 12px;
+    background: linear-gradient(45deg, rgba(43, 102, 74, 0.6) 0%, #232f3a88 100%, #000000 85%, #13302294 0%);
+}
+
+.progress-bar {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: auto;
+    min-width: 300px;
+    min-height: 30px;
+    height: auto;
+    font-size: 18px;
+    padding: 15px;
+    max-width: auto;
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(43, 102, 74, 0.6) 0%, #232f3a88 100%, #000000 85%, #13302294 0%);
+}
+
+.progress-bar span {
+    z-index: 999;
+}
+
+.load {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    min-height: 30px;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(43, 102, 74, 0.6) 0%, #232f3a88 100%, #000000 85%, #13302294 0%);
+}
+
+.progress-circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    font-size: 18px;
+    top:-55px;
+    left:0;
+    transform: translateX(-50%);
+    background: linear-gradient(45deg, rgba(43, 102, 74, 0.6) 0%, #232f3a88 100%, #000000 85%, #13302294 0%);
+}
+
+.polygon {
+    position: absolute;
+    display: block;
+    bottom: -10px;
+    width: 20px;
+    height: 20px;
+    left:10px;
+}
+
+.percent-txt {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.notification {
+    margin-top:10px;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    padding:1vh;
+    background:red url("https://www.suretiimf.com/wp-content/uploads/2020/06/transparent-background-pattern-png-4.png");
+    color:#fff;
+    font-size:16px;
+    font-weight:100;
+    width:auto;
+    transform:translateX(-110%);
+    transition: .2s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation: bg-anim 100s linear infinite;
+  }
+  @keyframes bg-anim {
+    100%{
+     background-position:0px -3000px;
+   }
+ }
+.pop {
+  transform:none;
+}
+
+.notification span {
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.notify-circle-btn { 
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(43, 102, 74, 0.6) 0%, #232f3a88 100%, #000000 85%, #13302294 0%);
+}
+
+
+#notification-container {
+	position:absolute;
+	top:10vh;
+	left:0;
+	width:auto;
+	height:auto;
+	max-height:50vh;
+}
+

@@ -1,0 +1,9 @@
+TriggerEvent('panama_notifikacije:sendNotification', 'fas fa-check', 'text', 5000)
+
+TriggerEvent('panama_notifikacije:sendFloatingText', 'Pritisni <span><strong>E</span></strong> da pristupite <span></strong>banci</span></strong>.') <----  PRIMJER ZA FLOATING TEXTDA PRISTUPITE BANKOMATU
+
+za obaveijsti morate biti super admin ili admin , napisete /obavesti 1 2 ili 3 text to treba izgledati ovako 
+
+/obavesti 1 sokacleaks
+/obavesti 2 sokacleaks
+/obavesti 3 sokacleaks
