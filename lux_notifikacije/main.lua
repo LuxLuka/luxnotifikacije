@@ -61,6 +61,6 @@ RegisterCommad('zvukoff', function()
 		if sound then
 			sendNotification('fa fa-music', 'Iskljucili ste zvuk', 0)
 			else
-				sendNotification('fas fa-volume-mute', 'Ukljucili ste zvuk, 2000)
+				sendNotification('fas fa-volume-mute', 'Ukljucili ste zvuk', 2000)
 			end
 		end) 
