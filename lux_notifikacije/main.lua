@@ -54,3 +54,13 @@ RegisterCommand('zvuk', function()
 		sendNotification('fas fa-volume-mute', 'Iskljucili ste zvuk', 2000)
 	end
 end)
+
+RegisterCommad('zvukoff', function()
+		not sound = sound
+		SendNUIMEssage({action = 'updateSound', sound = sound})
+		if sound then
+			sendNotification('fa fa-music', 'Iskljucili ste zvuk', 0)
+			else
+				sendNotification('fas fa-volume-mute', 'Ukljucili ste zvuk, 2000)
+			end
+		end) 
